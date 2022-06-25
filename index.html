@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>>Hackathon2></title>
+        <LINK REL=StyleSheet HREF="style.css" TYPE="text/css" >
+        
+    </head>
+   
+    <body>
+        <header>
+            <a href="#" class="logo"></a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="inciasesion.html">Log in</a></li>
+                <li><a href="#" >Work</a></li>
+                <li><a href="#" >Contact</a></li>
+            </ul>
+        </header>
+
+        <section>
+            <img src="/images/stars.png" id="stars">
+            <img src="/images/moon.png" id="moon">
+            <img src="/images/f.png" id ="logo"  >
+            <a href="inicio.html" id="btn">Start</a>
+            <img src="/images/sam2.png" id="mountains_behind">
+            <img src="/images/sam.png" id="mountains_front">
+        </section>
+
+        <div class="sec" id="sec">
+            
+            <h2>🪐What is FIMATH?</h2>
+            <p> It is a web application visible on mobile and desktop devices 
+                that allows you to take a picture of mathematical expressions 
+                that you do not know, giving you information about this and other 
+                topics as well as teaching material, tutorials and recommended books.</p>
+                          &nbsp;
+                          <h2>🪐How does it work?</h2>
+                          <p>Using convolutional neural networks, a model capable of identifying
+                             different mathematical symbols was trained, through some lines of 
+                             html, css and js, as well as the cell phone camera, we can scan the 
+                             mathematical expressions that are unknown to us. Also when creating 
+                             an account our data and preferences are stored for later use.</p>
+                                        &nbsp;
+                                        &nbsp;
+                                        <h2>🪐Why use FIMATH?</h2>
+                                        <p>
+                                            A very common problem when trying to learn mathematics is not knowing where to start,
+                                             the equations presented in the books are threatening and discourage the student.
+                                            With Fimath that problem is in the past, just by scanning the equation,
+                                            Fimath shows you what type of equation it is, relevant information, resources
+                                             to learn how to solve it, as well as previous topics that are required for its full
+                                              understanding, in a fast and fun way.
+                                                      &nbsp;
+
+        </div>
+
+        <section>
+            <h2 style="color: #fff;" >Our Team</h2>
+            <img src="/images/stars.png" id="stars">
+
+        <div class="card" >
+        <div class="head">
+            <div class="circle"></div>
+            <div class="img">
+                <img src="images/manuel.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="description">
+            <h3>Manuel Alejandro Gutierrez Leon</h3>
+            <h4> Mechatronic engineering student</h4>
+            <p> Participating for the second time in HackSTEM 2022</p>
+        </div>
+
+        <div class="contact">
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="card" >
+        <div class="head">
+            <div class="circle"></div>
+            <div class="img">
+                <img src="/images/sam.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="description">
+            <h3>Samara García González</h3>
+            <h4>
+                Mechatronic engineering student</h4>
+            <p>
+                Participating for the second time in HackSTEM 2022</p>
+        </div>
+
+        <div class="contact">
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="head">
+            <div class="circle"></div>
+            <div class="img">
+                <img src="images/ranier.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="description">
+            <h3>Ranier Restifo Nietoo</h3>
+            <h4> Mechatronic engineering student</h4>
+            <p> Participating for the first time in HackSTEM 2022</p>
+        </div>
+
+        <div class="contact">
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="head">
+            <div class="circle"></div>
+            <div class="img">
+                <img src="images/isaac.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="description">
+            <h3>Isaac Lagunas</h3>
+            <h4> Mechatronic engineering student</h4>
+            <p> Participating for the second time in HackSTEM 2022</p>
+        </div>
+
+        <div class="contact">
+            <a href="#">Contact</a>
+        </div>
+    </div>
+        </div>
+    </section>
+ 
+   
+  
+
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let mountains_front = document.getElementById('mountains_front');
+            let logo = document.getElementById('logo');
+            let btn = document.getElementById('btn');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function(){
+              let value = window.scrollY; 
+              stars.style.left = value * 0.25+ 'px';
+              moon.style.top = value * 1.05 + 'px';   
+              mountains_behind.style.top = value * 0.5 + 'px'; 
+              mountains_front.style.top = value * 0 + 'px'; 
+              logo.style.marginRight = value * 5 + 'px'; 
+              logo.style.marginTop = value * 1.5 + 'px'; 
+              btn.style.marginTop = value * 1.5 + 'px';
+              header.style.top = value * 0.5 + 'px'; 
+            })
+        </script>
+    </body>
+
+</html>
